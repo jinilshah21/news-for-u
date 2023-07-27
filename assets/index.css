@@ -106,6 +106,7 @@ ul {
     overflow: hidden;
 }
 
+
 .card-content {
     width: 90%;
     margin: 10px;
@@ -140,6 +141,7 @@ ul {
 .card:hover {
     box-shadow: 0 0 4px rgb(132, 132, 132);
     transform: translateY(-2px);
+    cursor: pointer;
 }
 
 main {

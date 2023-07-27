@@ -37,4 +37,8 @@ function fillDataInCard(cardClone, articles) {
     });
 
     newsSource.innerHTML = `${articles.source.name}${date}`;
+    // console.log(articles.url);
+    cardClone.firstElementChild.addEventListener('click', () => {
+        window.open(articles.url, "_blank");
+    });
 }
