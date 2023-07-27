@@ -30,58 +30,25 @@
 
 
     <main>
-        <div class="cards-container">
-            <div class="card">
-                <div class="card-header">
-                    <img src="https://via.placeholder.com/350x200" alt="news-image">
-                </div>
-                <div class="card-content">
-                    <h3>Topic of news</h3>
-                    <h6>date 2/02/2002</h6>
-                    <p class="news-desc">Lorem ipseum jantar mantar jadoo tona mast kalandar jag me bahut sare bandar
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <img src="https://via.placeholder.com/350x200" alt="news-image">
-                </div>
-                <div class="card-content">
-                    <h3>Topic of news</h3>
-                    <h6>date 2/02/2002</h6>
-                    <p class="news-desc">Lorem ipseum jantar mantar jadoo tona mast kalandar jag me bahut sare bandar
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <img src="https://via.placeholder.com/350x200" alt="news-image">
-                </div>
-                <div class="card-content">
-                    <h3>Topic of news</h3>
-                    <h6>date 2/02/2002</h6>
-                    <p class="news-desc">Lorem ipseum jantar mantar jadoo tona mast kalandar jag me bahut sare bandar
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <img src="https://via.placeholder.com/350x200" alt="news-image">
-                </div>
-                <div class="card-content">
-                    <h3>Topic of news</h3>
-                    <h6>date 2/02/2002</h6>
-                    <p class="news-desc">Lorem ipseum jantar mantar jadoo tona mast kalandar jag me bahut sare bandar
-                    </p>
-                </div>
-            </div>
-
+        <div class="cards-container" id="card-container">
 
         </div>
     </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img id="news-img" src="https://via.placeholder.com/350x200" alt="news-image">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">Topic of news</h3>
+                <h6 id="news-source">date 2/02/2002</h6>
+                <p class="news-desc">Lorem ipseum jantar mantar jadoo tona mast kalandar jag me bahut sare bandar
+                </p>
+            </div>
+        </div>
+    </template>
+
     <script src="index.js"></script>
 </body>
 
