@@ -42,3 +42,16 @@ function fillDataInCard(cardClone, articles) {
         window.open(articles.url, "_blank");
     });
 }
+
+function navItemClick(id) {
+    fetchNews(id);
+}
+
+const searchbutton = document.getElementById('search-button');
+const searchText = document.getElementById('search-text');
+
+searchbutton.addEventListener('click', () => {
+    const query = searchText.value;
+    if (!query) return;
+    fetchNews(query);
+})

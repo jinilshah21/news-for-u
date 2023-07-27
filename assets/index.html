@@ -16,14 +16,14 @@
             </a>
             <div class="nav-div">
                 <ul class="nav-links">
-                    <li class="nav-topics">Cryptocurrency</li>
-                    <li class="nav-topics">Stock Market</li>
-                    <li class="nav-topics">Gold & Silver</li>
+                    <li class="nav-topics" id="crypto" onclick="navItemClick('crypto')">Cryptocurrency</li>
+                    <li class="nav-topics" id="stock" onclick="navItemClick('stock')">Stock Market</li>
+                    <li class="nav-topics" id="gold" onclick="navItemClick('gold')">Gold & Silver</li>
                 </ul>
             </div>
             <div class="search-bar">
-                <input type="text" class="news-input" placeholder="search for news">
-                <button class="search-button">Search</button>
+                <input type="text" class="news-input" id="search-text" placeholder="search for news">
+                <button class="search-button" id="search-button">Search</button>
             </div>
         </div>
     </nav>
