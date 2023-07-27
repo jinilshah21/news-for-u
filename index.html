@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav">
+            <a href="#">
+                <img src="logo.png" class="logo" alt="Logo cannot be loaded">
+            </a>
+            <div class="nav-div">
+                <ul class="nav-links">
+                    <li class="nav-topics" id="crypto" onclick="navItemClick('crypto')">Cryptocurrency</li>
+                    <li class="nav-topics" id="stock" onclick="navItemClick('stock')">Stock Market</li>
+                    <li class="nav-topics" id="gold" onclick="navItemClick('gold')">Gold & Silver</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="news-input" id="search-text" placeholder="search for news">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="cards-container" id="card-container">
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img id="news-img" alt="news-image">
+            </div>
+            <div class="card-content">
+                <h2 id="news-title">Topic of news</h3>
+                    <h5 id="news-source">date 2/02/2002</h6>
+                        <p class="news-desc">Lorem ipseum jantar mantar jadoo tona mast kalandar jag me bahut sare
+                            bandar
+                        </p>
+            </div>
+        </div>
+    </template>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
